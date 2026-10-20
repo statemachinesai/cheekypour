@@ -26,7 +26,7 @@ In Cloudflare, open **Workers & Pages**, create an application, and connect the 
 - Build command: leave empty
 - Deploy command: `npx wrangler deploy`
 
-After deployment, verify the generated `workers.dev` URL. Add `cheekypour.com` through the Worker's **Settings > Domains & Routes > Add > Custom Domain** when the domain is available in the same Cloudflare account.
+The configuration connects `cheekypour.com` as a custom domain, so deploy using the Cloudflare account that manages it. After deployment, verify both the generated `workers.dev` URL and `https://cheekypour.com`.
 
 For a manual deployment with Node.js and npm installed, run `npx wrangler login` and then `npx wrangler deploy` from the repository root.
 
